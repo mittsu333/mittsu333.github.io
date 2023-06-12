@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sound Test</title>
+</head>
+
+<body>
+    <button id="playButton">音声再生</button>
+
+    <script>
+
+        var audioElement = new Audio();
+        var playButton = document.getElementById("playButton");
+
+        playButton.addEventListener("click", function () {
+            audioElement.src = "./sample.mp3";
+            audioElement.play();
+        });
+
+    </script>
+
+</html>
+</body>
